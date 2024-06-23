@@ -1,0 +1,22 @@
+@import "../mixin/size";
+@import "../mixin/color";
+
+.l-table{
+	width: 100%;
+	margin: 20px 0 0 0;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: $sub-background-color;
+
+	.l-table__tr{
+		width: 100%;
+
+		.l-table__tr__th{
+			text-align: left;
+		}
+
+		.l-table__tr__td{
+			text-align: left;
+		}
+	}
+}

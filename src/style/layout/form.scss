@@ -1,0 +1,57 @@
+.l-form{
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #fff;
+
+	.l-form__field{
+		width: 100%;
+		display: flex;
+		margin: 20px 0 0 0;
+		padding: 0 80px;
+		gap: 0 20px;
+		align-items: center;
+
+		&:nth-child(1){
+			margin: 0;
+		}
+
+		label{
+			width: 100%;
+			max-width: 400px;
+			display: block;
+			text-align: left;
+		}
+
+		input{
+			width: 100%;
+			display: block;
+			padding: 10px 16px;
+			border-radius: 8px;
+			outline: none;
+			border: 1px solid #ccc;
+		}
+
+		textarea{
+			width: 100%;
+			display: block;
+			padding: 10px 16px;
+			border-radius: 8px;
+			outline: none;
+			border: 1px solid #ccc;
+			resize: none;
+		}
+	}
+
+	.l-form__button{
+		width: fit-content;
+		margin: 20px 80px 0 auto;
+		padding: 6px 10px;
+		display: block;
+		color: #fff;
+		font-size: 0.9rem;
+		background-color: #7c98ff;
+		border-radius: 10px;
+		border: none;
+	}
+}

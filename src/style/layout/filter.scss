@@ -1,0 +1,31 @@
+@import "../mixin/size";
+@import "../mixin/color";
+
+.l-filter{
+	width: 100%;
+	margin: 20px 0 0 0;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: $sub-background-color;
+
+	.l-filter__area{
+		width: 100%;
+		display: flex;
+		gap: 0 10px;
+
+		.l-filter__input-text{
+			padding: 8px 10px;
+			display: block;
+		}
+	}
+
+	.l-filter__search-button{
+		display: block;
+		background-color: #5fd2ff;
+		border: none;
+		color: #fff;
+		padding: 6px 10px;
+		border-radius: 6px;
+		margin: 0 0 0 auto;
+	}
+}

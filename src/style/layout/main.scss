@@ -1,0 +1,8 @@
+@import "../mixin/size";
+
+.l-main-container{
+	width: calc(100% - $header-height-size - $header-height-size - $header-height-size + 14px);
+	position: absolute;
+	top: 0;
+	left: $sidebar-width-size;
+}
