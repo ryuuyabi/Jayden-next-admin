@@ -1,0 +1,41 @@
+.user_detail{
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #fff;
+	margin: 0 0 20px 0;
+
+	.user-detail__title{
+		width: 100%;
+		font-weight: 600;
+	}
+	.user-detail__content{
+		width: 100%;
+
+		.user-detail__content__item{
+			width: 100%;
+			margin: 6px 0;
+			display: flex;
+			align-items: center;
+
+			.user-detail__content__item__label{
+				width: 50%;
+			}
+		}
+	}
+}
+
+.user_notification{
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #fff;
+	margin: 0 0 20px 0;
+}
+
+.user_cooking{
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #fff;
+}

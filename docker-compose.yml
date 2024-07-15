@@ -1,0 +1,12 @@
+version: '3'
+services:
+    fronend:
+        container_name: jayden_next-admin
+        build:
+            context: ./docker/frontend
+        tty: true
+        ports:
+            - ${FRONEND_PORT}:3000
+        volumes:
+            - ./frontend:/var/www/fronend/admin
+        command: npm run dev
