@@ -38,3 +38,23 @@ export interface NewsShow {
     release_date: string
     is_active: boolean
 }
+
+export interface PrefectureIndex {
+    id: number,
+    name: string,
+    origin_name: string
+    code: number,
+    is_active: boolean
+    created_at: string
+    updated_at: string
+}
+
+export interface PrefectureShow {
+    id: number,
+    name: string,
+    origin_name: string
+    code: number,
+    is_active: boolean
+    created_at: string
+    updated_at: string
+}

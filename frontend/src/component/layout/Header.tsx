@@ -3,8 +3,6 @@
 import Image from "next/image"
 import Sample1Image from "@image/sample1.jpeg";
 import Link from "next/link";
-import HeaderSearchForm from "./Header/HeaderSearchForm";
-import { GetAuthOperator } from "@/endpoint/auth/GetAuthOperator";
 import { createContext, useContext } from "react";
 
 // ログイン状態の管理者のデータを保持するためにhookを作成
@@ -22,7 +20,7 @@ const OperatorProfileLink = () => {
 }
 
 export default function Header() {
-    const authOperator = GetAuthOperator()?.data
+    const authOperator = undefined
     if (authOperator === undefined) {
         return (
             <div className="l-header">

@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Header from "@/component/layout/Header";
-import Sidebar from "@/component/layout/Sidebar";
 import "@style/index.scss";
-
-const inter = Inter({ subsets: ["latin"] });
+import AuthLayout from "@/component/layout/AuthLayout";
 
 export const metadata: Metadata = {
     title: "Jayden管理",
@@ -17,14 +13,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="jp">
-            <body className={inter.className}>
-                <Sidebar />
-                <div className="l-main-container">
-                    <Header />
-                    {children}
-                </div>
-            </body>
-        </html>
+        <AuthLayout>
+            {children}
+        </AuthLayout>
     );
 }

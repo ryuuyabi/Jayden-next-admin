@@ -4,8 +4,8 @@ import UserCreateForm from "@/component/layout/Form/UserCreateForm"
 
 export default function Home() {
     return (
-        <main>
+        <div className="l-main">
             <UserCreateForm />
-        </main>
+        </div>
     )
 }

@@ -1,14 +1,16 @@
 'use client'
 
 import DefaultFlashMessage from "@/component/layout/FlashMessage/DefaultFlashMessage"
+import TopActiveHistoryList from "@/component/layout/Top/TopActiveHistoryList"
+import TopNewsList from "@/component/layout/Top/TopNewsList"
 import { FlashMessageTypeEnum } from "@/enum/FlashMessageType"
 
 export default function Home() {
     return (
-        <main>
-            <DefaultFlashMessage message="ログインしてください" flash_message_type={FlashMessageTypeEnum['SUCCESS']} />
-            <div>お知らせ一覧</div>
-            <div>メッセージ一覧</div>
-        </main>
+        <div className="l-main">
+            <DefaultFlashMessage message="メッセージ" flash_message_type={FlashMessageTypeEnum['SUCCESS']} />
+            <TopNewsList />
+            {/* <TopActiveHistoryList /> */}
+        </div>
     )
 }

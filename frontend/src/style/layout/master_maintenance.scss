@@ -1,0 +1,17 @@
+.l-master_maintenance{
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #fff;
+	margin: 0 0 20px 0;
+	display: flex;
+	gap: 10px 20px;
+
+	.l-master_maintenance__items{
+		width: 100%;
+		max-width: 80px;
+		height: 60px;
+		display: block;
+		border: 1px solid #333;
+	}
+}

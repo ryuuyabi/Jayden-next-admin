@@ -1,4 +1,5 @@
 export interface ApiResponse<T> {
+    redirectUri: string
     message: string
     status: number
     data_type: number

@@ -1,18 +1,18 @@
 'use client'
 
+import DefaultLoading from "@/component/layout/Loading/DefaultLoading";
 import NewsIndexSubContext from "@/component/layout/SubContent/NewsIndexSubContext";
 import NewsIndexTable from "@/component/layout/Table/NewsIndexTable";
 import PaginationSwr from "@/feature/api/PaginationSwr";
 import { NewsIndex } from "@/type/ApiResponseData";
 
 export default function Home() {
-    const { data, error } = PaginationSwr<NewsIndex>("http://admin.localhost/api/news/index")
-    if (error) return <div>Failed to load</div>;
-    if (!data) return <div>Loading...</div>;
+    const data = PaginationSwr<NewsIndex>("http://admin.localhost/api/news/index", true)
+    if (data === undefined) return <DefaultLoading />;
     return (
-        <main>
+        <div className="l-main">
             <NewsIndexSubContext />
-            <NewsIndexTable news_list={data.data.data} />
-        </main>
+            <NewsIndexTable news_list={data.data.data.data} />
+        </div>
     )
 }

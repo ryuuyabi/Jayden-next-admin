@@ -15,10 +15,10 @@ export default function AuthLayout({ children }: Props) {
         <html lang="jp">
             <body className={inter.className}>
                 <Sidebar />
-                <div className="l-main-container">
+                <main className="l-main-container">
                     <Header />
                     {children}
-                </div>
+                </main>
             </body>
         </html>
     )

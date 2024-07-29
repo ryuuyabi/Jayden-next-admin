@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server'
+import CheckAuthOperator from './feature/auth/CheckAuthOperator'
 
 const allowedOrigins = ['http://admin.localhost/']
 const corsOptions = {
@@ -25,7 +26,7 @@ export async function middleware(request: NextRequest) {
         return NextResponse.json({}, { headers: preflightHeaders })
     }
 
-    // Handle simple requests
+    const pathname: string = request.nextUrl.pathname
     const response = NextResponse.next()
 
     if (isAllowedOrigin) {
@@ -35,9 +36,16 @@ export async function middleware(request: NextRequest) {
         response.headers.set(key, value)
     })
 
+    const check_auth_operator: boolean = await CheckAuthOperator();
+
     // 未ログインだったらログイン画面に遷移させる
-    if (true) {
-        NextResponse.redirect(new URL('/auth/login', request.url))
+    if (check_auth_operator === false && gestUrl.includes(pathname) === false) {
+        return NextResponse.redirect(new URL('/auth/login', request.url))
+    }
+
+    // ログイン状態でログイン画面を開いたらTOP画面に遷移させる
+    if (check_auth_operator === true && gestUrl.includes(pathname) === true) {
+        return NextResponse.redirect(new URL('/top', request.url))
     }
 
     return response
@@ -46,3 +54,4 @@ export async function middleware(request: NextRequest) {
 export const config = {
     matcher: ["/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js).*)"]
 }
+const gestUrl = ['/auth/login', '/auth/register'];

@@ -13,19 +13,22 @@ export default function Sidebar() {
                 <Link href="/operator" className="l-sidebar__item__link">管理者</Link>
             </div>
             <div  className="l-sidebar__item">
+                <Link href="/operator" className="l-sidebar__item__link">管理者作成申請</Link>
+            </div>
+            <div  className="l-sidebar__item">
                 <Link href="/news" className="l-sidebar__item__link">お知らせ</Link>
             </div>
             <div  className="l-sidebar__item">
-                <Link href="/" className="l-sidebar__item__link">メールマガジン</Link>
+                <Link href="/mail_magazine" className="l-sidebar__item__link">メールマガジン</Link>
             </div>
             <div  className="l-sidebar__item">
-                <Link href="/" className="l-sidebar__item__link">ファイル</Link>
+                <Link href="/file" className="l-sidebar__item__link">ファイル</Link>
             </div>
             <div  className="l-sidebar__item">
-                <Link href="/" className="l-sidebar__item__link">サポート</Link>
+                <Link href="/master_maintenance" className="l-sidebar__item__link">マスタメンテナンス</Link>
             </div>
             <div  className="l-sidebar__item">
-                <Link href="/" className="l-sidebar__item__link">設定</Link>
+                <Link href="/setting" className="l-sidebar__item__link">設定</Link>
             </div>
         </div>
     )

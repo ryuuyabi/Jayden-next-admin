@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function DefaultLoading() {
     return (
-        <div>...loading</div>
+        <div className="loader-cover">
+            <div className='loader'></div>
+        </div>
     )
 }

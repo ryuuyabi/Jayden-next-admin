@@ -1,6 +1,6 @@
 version: '3'
 services:
-    fronend:
+    frontend:
         container_name: jayden_next-admin
         build:
             context: ./docker/frontend

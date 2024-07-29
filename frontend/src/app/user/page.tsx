@@ -7,10 +7,10 @@ import { FlashMessageTypeEnum } from "@/enum/FlashMessageType"
 
 export default function Home() {
     return (
-        <main>
+        <div className="l-main">
             <DefaultFlashMessage message="ユーザを削除しました" flash_message_type={FlashMessageTypeEnum['SUCCESS']} />
             <UserIndexSubContent />
             <UserIndexTable />
-        </main>
+        </div>
     )
 }

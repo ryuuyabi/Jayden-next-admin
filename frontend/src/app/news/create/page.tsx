@@ -2,8 +2,8 @@ import NewsCreateForm from "@/component/layout/Form/NewsCreateForm";
 
 export default function Home() {
     return (
-        <main>
+        <div className="l-main">
             <NewsCreateForm />
-        </main>
+        </div>
     )
 }
