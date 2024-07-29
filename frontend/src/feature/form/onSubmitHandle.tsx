@@ -2,9 +2,10 @@
 
 import { FormEvent, useState } from "react";
 import { FetchPost } from "./FetchPost";
+import { ApiResponse } from "@/type/ApiResponse";
 
-export function onSubmitHandle(url: string, initialFormData: object) {
-    const [response, setResponse] = useState<any>()
+export function onSubmitHandle<T>(url: string, initialFormData: object) {
+    const [response, setResponse] = useState<ApiResponse<T>|null>(null)
     const [redirectUri, setRedirectUri] = useState<string|null>(null)
     const [formData, setFormData] = useState(initialFormData)
     const [isPostFetching, setIsPostFetching] = useState(false)
@@ -17,12 +18,14 @@ export function onSubmitHandle(url: string, initialFormData: object) {
         e.preventDefault();
         e.stopPropagation();
 
-        const response = await FetchPost(e, url, formData);
+        const apiResponse = await FetchPost<T>(e, url, formData);
 
-        setRedirectUri(response.data === null ? null : response.data.redirectUri)
-        setResponse(response);
-        setIsPostFetching(true);
+        if (apiResponse && apiResponse.data) {
+            setRedirectUri(apiResponse.data.redirectUri)
+            setResponse(response);
+            setIsPostFetching(true);
+        }
     };
 
-    return { handleSubmit, handleChange, isPostFetching, redirectUri }
+    return { handleSubmit, handleChange, isPostFetching, redirectUri, response }
 }

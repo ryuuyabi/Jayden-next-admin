@@ -4,8 +4,8 @@ import { ApiResponse } from "@/type/ApiResponse";
 import { FormEvent } from "react";
 import { GetJwt } from "../jwt/JwtService";
 
-export async function FetchPost(e: FormEvent<HTMLFormElement>, url: string, body: object) {
-    let data: null | ApiResponse<any> = null;
+export async function FetchPost<T>(e: FormEvent<HTMLFormElement>, url: string, body: object) {
+    let data: null | ApiResponse<T> = null;
     let status: number = 500;
     let validationMessages = null;
     let isValidationError = false;
@@ -31,9 +31,11 @@ export async function FetchPost(e: FormEvent<HTMLFormElement>, url: string, body
 
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
-        const apiResponse: ApiResponse<any> = await response.json();
+        const apiResponse = await response.json();
 
         status = apiResponse.status
+
+        if(apiResponse.data === null) throw new Error(`response null`);
 
         // 正常
         if (apiResponse.status === 200) {

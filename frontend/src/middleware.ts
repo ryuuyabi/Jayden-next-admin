@@ -48,6 +48,8 @@ export async function middleware(request: NextRequest) {
         return NextResponse.redirect(new URL('/top', request.url))
     }
 
+    if(pathname === '/') return NextResponse.redirect(new URL('/top', request.url));
+
     return response
 }
 

@@ -7,15 +7,14 @@
 	left: 0;
 	width: $sidebar-width-size;
 	height: 100vh;
+	padding: 20px 30px;
 	background-color: $sidebar-background-color;
-	padding: 20px 0;
+	overflow-x: scroll;
 
 	.l-sidebar__item{
 		width: 100%;
-		max-width: 120px;
 		margin: 0 auto;
-		padding: 10px 0;
-		overflow-x: scroll;
+		padding: 12px 0;
 
 		.l-sidebar__item__link{
 			display: block;
