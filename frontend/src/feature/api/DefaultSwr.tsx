@@ -13,7 +13,7 @@ export default function DefaultSwr<T>(url: string, isAuthorization: boolean = fa
     return { data, error }
 }
 
-function fetchDefault(url: string){
+async function fetchDefault(url: string){
     return fetch(url).then(res => res.json());
 }
 

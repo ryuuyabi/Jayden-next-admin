@@ -1,4 +1,4 @@
-DOCKER_CMD := docker-compose -f docker-compose.yml
+DOCKER_CMD := docker-compose
 FRONEND_CMD := docker-compose exec frontend
 
 build:
@@ -6,4 +6,4 @@ build:
 up:
 	${DOCKER_CMD} up -d
 frontend:
-	${DOCKER_CMD} exec frontend bash
+	docker-compose exec frontend bash
