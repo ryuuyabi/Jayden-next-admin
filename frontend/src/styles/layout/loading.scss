@@ -1,0 +1,27 @@
+@import "../mixin/size";
+@import "../mixin/color";
+
+.loader-cover{
+	width: 100%;
+	height: calc(100vh - $header-height-size);
+
+	.loader{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 42%;
+		left: 46%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		border: 10px solid #EAF0F6;
+		border-radius: 50%;
+		border-top: 10px solid $sidebar-background-color;
+		animation: spinner 1s linear infinite;
+	}
+}
+
+@keyframes spinner {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}

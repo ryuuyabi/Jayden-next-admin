@@ -1,0 +1,24 @@
+@import "../mixin/size";
+@import "../mixin/color";
+
+.l-sidebar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: $sidebar-width-size;
+	height: 100vh;
+	padding: 20px 30px;
+	background-color: $sidebar-background-color;
+	overflow-x: scroll;
+
+	.l-sidebar__item{
+		width: 100%;
+		margin: 0 auto;
+		padding: 12px 0;
+
+		.l-sidebar__item__link{
+			display: block;
+			color: #fff;
+		}
+	}
+}

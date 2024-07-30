@@ -1,0 +1,35 @@
+.l-top-news{
+	width: 100%;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+
+	.l-top-news--list{
+		margin: 10px 0 0 0;
+		padding: 0;
+		list-style: none;
+
+		.l-top-news--title--item{
+			text-decoration: none;
+		}
+	}
+}
+
+.l-top-active{
+	width: 100%;
+	margin: 20px 0 0 0;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+
+	.l-top-active--list{
+		margin: 10px 0 0 0;
+		padding: 0;
+		list-style: none;
+
+		.l-top-active--title--item{
+			text-decoration: none;
+		}
+	}
+
+}
