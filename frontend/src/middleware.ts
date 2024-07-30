@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server'
-import CheckAuthOperator from './feature/auth/CheckAuthOperator'
+import CheckAuthOperator from './features/auth/CheckAuthOperator'
 
 const allowedOrigins = ['http://admin.localhost/']
 const corsOptions = {

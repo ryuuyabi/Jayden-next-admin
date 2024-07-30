@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "@style/index.scss";
-import AuthLayout from "@/component/layout/AuthLayout";
+import "@styles/index.scss";
+import AuthLayout from "@/components/layout/AuthLayout";
 
 export const metadata: Metadata = {
     title: "Jayden管理",

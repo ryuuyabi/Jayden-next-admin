@@ -1,6 +1,6 @@
 'use client'
 
-import FileIndexTable from "@/component/layout/Table/FileIndexTable"
+import FileIndexTable from "@/components/layout/Table/FileIndexTable"
 
 export default function Home(){
     return(

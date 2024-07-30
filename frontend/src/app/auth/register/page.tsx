@@ -1,7 +1,7 @@
 'use client'
 
-import FormDefault from "@/component/layout/Form/FormDefault";
-import { onSubmitHandle } from "@/feature/form/onSubmitHandle";
+import FormDefault from "@/components/layout/Form/FormDefault";
+import { onSubmitHandle } from "@/features/form/onSubmitHandle";
 
 export default function Page(){
     const { handleSubmit, handleChange, redirectUri } = onSubmitHandle('http://admin.localhost/api/auth/register/store', {email: ''})

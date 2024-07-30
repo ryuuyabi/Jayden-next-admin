@@ -1,9 +1,9 @@
 'use client'
 
-import DefaultLoading from "@/component/layout/Loading/DefaultLoading";
-import PrefectureIndexSubContent from "@/component/layout/SubContent/MasterMaintenance/PrefectureIndexSubContent"
-import PrefectureIndexTable from "@/component/layout/Table/MasterMaintenance/PrefectureIndexTable"
-import DefaultSwr from "@/feature/api/DefaultSwr"
+import DefaultLoading from "@/components/layout/Loading/DefaultLoading";
+import PrefectureIndexSubContent from "@/components/layout/SubContent/MasterMaintenance/PrefectureIndexSubContent"
+import PrefectureIndexTable from "@/components/layout/Table/MasterMaintenance/PrefectureIndexTable"
+import DefaultSwr from "@/features/api/DefaultSwr"
 
 export default function Home() {
     const prefectures = DefaultSwr(`http://admin.localhost/api/master_maintenance/prefecture`);

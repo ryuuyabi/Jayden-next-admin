@@ -1,10 +1,10 @@
 'use client'
 
-import PrefectureShowForm from "@/component/layout/Form/PrefectureShowForm";
-import DefaultLoading from "@/component/layout/Loading/DefaultLoading";
-import DefaultSwr from "@/feature/api/DefaultSwr";
-import { getId } from "@/feature/url/getPathName";
-import { PrefectureShow } from "@/type/ApiResponseData";
+import PrefectureShowForm from "@/components/layout/Form/PrefectureShowForm";
+import DefaultLoading from "@/components/layout/Loading/DefaultLoading";
+import DefaultSwr from "@/features/api/DefaultSwr";
+import { getId } from "@/features/url/getPathName";
+import { PrefectureShow } from "@/types/ApiResponseData";
 
 export default function Home() {
     const apiResponseData = DefaultSwr<PrefectureShow>(`http://admin.localhost/api/master_maintenance/prefecture/${getId()}`, true);

@@ -1,4 +1,4 @@
-import OperatorCreateForm from "@/component/layout/Form/OperatorCreateForm";
+import OperatorCreateForm from "@/components/layout/Form/OperatorCreateForm";
 
 export default function Home() {
     return (

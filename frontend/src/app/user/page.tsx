@@ -1,9 +1,9 @@
 'use client'
 
-import DefaultFlashMessage from "@/component/layout/FlashMessage/DefaultFlashMessage"
-import UserIndexSubContent from "@/component/layout/SubContent/UserIndexSubContent"
-import UserIndexTable from "@/component/layout/Table/UserIndexTable"
-import { FlashMessageTypeEnum } from "@/enum/FlashMessageType"
+import DefaultFlashMessage from "@/components/layout/FlashMessage/DefaultFlashMessage"
+import UserIndexSubContent from "@/components/layout/SubContent/UserIndexSubContent"
+import UserIndexTable from "@/components/layout/Table/UserIndexTable"
+import { FlashMessageTypeEnum } from "@/enums/FlashMessageType"
 
 export default function Home() {
     return (

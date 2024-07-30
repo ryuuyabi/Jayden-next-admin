@@ -1,9 +1,9 @@
 'use client'
 
-import FormDefault from "@/component/layout/Form/FormDefault";
-import ValidationErrorMessage from "@/component/layout/Form/ValidationErrorMessage";
-import { SaveAuthOperator } from "@/feature/auth/SaveAuthOperator";
-import { FetchPost } from "@/feature/form/FetchPost";
+import FormDefault from "@/components/layout/Form/FormDefault";
+import ValidationErrorMessage from "@/components/layout/Form/ValidationErrorMessage";
+import { SaveAuthOperator } from "@/features/auth/SaveAuthOperator";
+import { FetchPost } from "@/features/form/FetchPost";
 import Link from "next/link";
 import { redirect } from 'next/navigation'
 import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";

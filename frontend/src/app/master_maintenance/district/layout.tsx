@@ -1,4 +1,4 @@
-import AuthLayout from "@/component/layout/AuthLayout";
+import AuthLayout from "@/components/layout/AuthLayout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

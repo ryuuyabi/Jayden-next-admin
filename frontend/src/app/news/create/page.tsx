@@ -1,4 +1,4 @@
-import NewsCreateForm from "@/component/layout/Form/NewsCreateForm";
+import NewsCreateForm from "@/components/layout/Form/NewsCreateForm";
 
 export default function Home() {
     return (

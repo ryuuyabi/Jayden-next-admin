@@ -1,9 +1,9 @@
-import AuthLayout from "@/component/layout/AuthLayout";
-import Header from "@/component/layout/Header";
-import Sidebar from "@/component/layout/Sidebar";
+import AuthLayout from "@/components/layout/AuthLayout";
+import Header from "@/components/layout/Header";
+import Sidebar from "@/components/layout/Sidebar";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "@style/index.scss";
+import "@styles/index.scss";
 
 export const metadata: Metadata = {
     title: "Jayden管理 | マスタメンテナンス",

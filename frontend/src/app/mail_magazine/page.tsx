@@ -1,7 +1,7 @@
 'use client'
 
-import MailMagazineIndexSubContent from "@/component/layout/SubContent/MailMagazineIndexSubContent";
-import MailMagazineIndexTable from "@/component/layout/Table/MailMagazineIndexTable";
+import MailMagazineIndexSubContent from "@/components/layout/SubContent/MailMagazineIndexSubContent";
+import MailMagazineIndexTable from "@/components/layout/Table/MailMagazineIndexTable";
 
 export default function Home(){
     return(

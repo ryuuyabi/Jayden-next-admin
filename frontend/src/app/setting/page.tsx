@@ -1,6 +1,6 @@
 'use client'
 
-import { LogoutOperator } from "@/feature/auth/LogoutOperator"
+import { LogoutOperator } from "@/features/auth/LogoutOperator"
 
 export default function Home() {
     const onClickLogout = () => {

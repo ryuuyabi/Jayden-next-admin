@@ -1,4 +1,4 @@
-import NewsShowForm from "@/component/layout/Form/NewsShowForm";
+import NewsShowForm from "@/components/layout/Form/NewsShowForm";
 
 export default function Home() {
     return (
